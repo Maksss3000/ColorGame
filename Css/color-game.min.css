@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  --margin: 4rem;
+  --color: #83a1b9;
+}
+
+@media (max-width: 900px) {
+  :root {
+    font-size: 50%;
+  }
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--color);
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: var(--margin) 0;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+main {
+  width: 80%;
+  max-width: 450px;
+  margin: 0 auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-text {
+  font-size: 4rem;
+  margin-bottom: var(--margin);
+  padding: 20px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.color-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--margin);
+}
+
+.circle {
+  background: teal;
+  width: 30%;
+  padding-bottom: 30%;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.message {
+  font-size: 2em;
+  color: white;
+  margin-bottom: var(--margin);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#start {
+  border: 1px solid currentColor;
+  outline: 0;
+  background: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color);
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.5s;
+  margin-bottom: var(--margin);
+}
+
+#new-game:hover {
+  cursor: pointer;
+  color: white;
+  background: var(--color);
+}
+
+#answer {
+  margin: 30px;
+  padding-top: 10px;
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  text-align: center;
+}
